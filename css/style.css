@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #280053fc;
+    background-color: #44175e;
 }
 
 nav {
@@ -22,13 +22,14 @@ nav {
     align-items: center;
     transition: all 0.3s ease;
     z-index: 1;
-    background-color: #4e059de4;
+    background-color: #5c1f6d;
 }
 
 .logo {
     width: 8vw;
     border-radius: 50%;
     box-shadow: 5px 5px 5px;
+    color: rgb(180, 109, 246);
 }
 
 .logo:hover,
@@ -47,7 +48,7 @@ nav ul {
 nav ul li {
     color: white;
     cursor: pointer;
-    text-shadow: 2vw 2vw 2vw black;
+    text-shadow: 1vw 1vw 1vw rgb(180, 109, 246);
 }
 
 header {
@@ -83,16 +84,25 @@ p {
 }
 
 .carrusel1,
-.carrusel2 {
+.carrusel2,
+.carrusel3,
+.carrusel4 {
     position: relative;
     width: 45%;
     height: 70vw;
     overflow: hidden;
     padding: 0 0 1vw 0;
+    border-radius: 15px;
 }
 
-.carrusel1 {
+.carrusel1,
+.carrusel3 {
     margin-left: 4%;
+}
+
+.carrusel3,
+.carrusel4 {
+    display: none;
 }
 
 .slides,
@@ -226,7 +236,6 @@ form {
 
 form label {
     display: block;
-    margin-top: 2vw;
     font-weight: bold;
 }
 
@@ -237,7 +246,6 @@ form textarea {
     padding: 0.8vw;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 2vw;
 }
 
 form button {
@@ -326,9 +334,9 @@ a {
     min-width: 230px;
     height: auto;
     border-style: solid;
-    border-radius: 20px 40px 20px 60px;
+    border-radius: 40px;
     margin: 1vw 1vw;
-    box-shadow: 0.5vw 0.5vw 0.5vw black;
+    box-shadow: 0.5vw 0.5vw 0.5vw white;
 }
 
 #galeria:hover {
@@ -339,4 +347,191 @@ a {
 
 #nombre {
     display: block;
+}
+
+.cuerpo {
+    background: rgb(69, 23, 100);
+}
+
+.video {
+    width: 50%;
+    justify-self: center;
+}
+
+/*Pantallas grandes*/
+@media (min-width:1400px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 1.5vw;
+        letter-spacing: 1px;
+    }
+
+    nav {
+        padding: 1vw 4vw;
+    }
+
+    .logo {
+        width: 4vw;
+    }
+
+    nav ul {
+        gap: 2vw;
+    }
+
+    header {
+        margin-bottom: 0.5vw;
+    }
+
+    header h2 {
+        padding: 5px;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1.7vw;
+        margin-bottom: 1vw;
+    }
+
+    p {
+        margin: 1vw;
+    }
+
+    .contenedor-carruseles {
+        gap: 2vw;
+    }
+
+    .carrusel1,
+    .carrusel2,
+    .carrusel3,
+    .carrusel4 {
+        display: block;
+        position: relative;
+        width: 30%;
+        height: 40vw;
+        padding: 0 0 1vw 0;
+    }
+
+    .carrusel1 {
+        margin-left: 1%;
+    }
+
+    .carrusel3 {
+        margin-left: 0;
+    }
+
+    .carrusel4 {
+        margin-right: 1%;
+    }
+
+    .slide {
+        width: 100%;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-manual {
+        width: 100%;
+        bottom: 15px;
+        gap: 10px;
+    }
+
+    .nav-manual label {
+        width: 12px;
+        height: 12px;
+        opacity: 0.6;
+    }
+
+    .part1,
+    .part2 {
+        gap: 1rem;
+        padding: 0 1.5vw 0 1.5vw;
+    }
+
+    .picture1 {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .part1 p,
+    .part2 p {
+        flex: 1 1 200px;
+    }
+
+    .formulario {
+        margin: 1vw 0 0.5vw 0;
+    }
+
+    form {
+        width: 40%;
+        margin: 0 0 0 30%;
+        padding: 1.5vw;
+        padding-top: 0;
+    }
+
+    form label {
+        margin-top: 1vw;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        width: 90%;
+        padding: 0.3vw;
+        border-radius: 5px;
+        font-size: 1vw;
+    }
+
+    form button {
+        margin-top: 0.5vw;
+        padding: 0.5vw 1.9vw;
+    }
+
+    footer {
+        margin-top: 1vw;
+        padding: 1vw;
+    }
+
+    .whatsapp-float,
+    .instagram-float {
+        width: 4vw;
+        height: 4vw;
+        bottom: 1vw;
+        right: 1vw;
+        border-radius: 50vw;
+        font-size: 4vw;
+    }
+
+    .instagram-float {
+        right: 6vw;
+    }
+
+    .whatsapp-float img,
+    .instagram-float img {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    #galeria_contenedor {
+        margin: 0.5vw 1 0 0;
+    }
+
+    label {
+        font-size: 1.4vw;
+        letter-spacing: 3px;
+    }
+
+    #galeria {
+        max-width: 30vw;
+        height: auto;
+        margin: 1vw 1vw;
+    }
+
+    .video {
+        width: 30%;
+        justify-self: center;
+    }
 }
