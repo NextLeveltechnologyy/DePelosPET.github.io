@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De pelos Pet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1><a href="index.html"><img class="logo" src="img/logo.jpg" alt="De pelos Pet"></a></h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#servicios">Sevicios</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="#formulario">Turnos</a></li>
+            <li><a
+                    href="https://api.whatsapp.com/send?phone=3517323513&text=Hola,%20quiero%20hacer%20una%20consulta&#128516">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Bienvenidos a De pelos 🐾</h2>
+    </header>
+    <div class="contenedor-carruseles">
+        <div class="carrusel1">
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="slides">
+                <div class="slide">
+                    <img src="img/Screenshot_1.jpg" alt="Imagen 1">
+                </div>
+                <div class="slide">
+                    <img src="img/Screenshot_2.jpg" alt="Imagen 2">
+                </div>
+                <div class="slide">
+                    <img src="img/Screenshot_3.jpg" alt="Imagen 3">
+                </div>
+            </div>
+            <div class="nav-manual">
+                <label></label>
+                <label></label>
+                <label></label>
+            </div>
+        </div>
+        <div class="carrusel2">
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="slides1">
+                <div class="slide">
+                    <img src="img/Screenshot_4.jpg" alt="Imagen 1">
+                </div>
+                <div class="slide">
+                    <img src="img/Screenshot_5.jpg" alt="Imagen 2">
+                </div>
+                <div class="slide">
+                    <img src="img/Screenshot_6.jpg" alt="Imagen 3">
+                </div>
+            </div>
+            <div class="nav-manual">
+                <label></label>
+                <label></label>
+                <label></label>
+            </div>
+        </div>
+    </div>
+    <div></div>
+
+    <section id="servicios">
+        <h3>¿Quiénes somos?</h3>
+        <p>🐶​ Somos una peluquería canina especializada en el cuidado, higiene y estilo de tus mascotas. Nos apasionan
+            los animales y trabajamos con amor ❤️ y profesionalismo 👩🏻‍⚕️​</p>
+    </section>
+    <section>
+        <h3>Servicios</h3>
+        <p>🚿 Baños con productos hipoalergénicos</p>
+        <p>✂️ Corte de pelo personalizado</p>
+        <p>🐾 Corte de uñas, limpieza de oídos y más</p>
+        <p>🧼​ Trabajamos sin sedantes ni cabinas de secado</p>
+    </section>
+    <div>
+        <h3 class="secc">¿Mi perro necesita un deslanado?</h3>
+        <div class="part1">
+            <img class="picture1" src="img/Screenshot_1.jpg" alt="FotoNLT">
+            <p>Esta técnica especial es muy importante en perros con submanto o mantos de doble capa como el Chow
+                Chow,
+                Husky, Akita, Samoyedo, Pomerania, algunos mastines y otros como los Golden Retriever, Pastor alemán
+                o
+                belga, sin olvidar los mestizos que también pueden tener un manto de estas características. </p>
+        </div>
+    </div>
+    <div>
+        <h3 class="secc">¿Por qué es tan importante cepillar a mi perro?</h3>
+        <div class="part2">
+            <p>Si no lo hacemos a diario, traerá consigo una acumulación de pelo muerto que se va desprendiendo
+                constantemente y una mayor probabilidad de que aparezcan parásitos en el cuerpo del can.</p>
+            <img class="picture1" src="img/Screenshot_4.jpg" alt="FotoNLT">
+        </div>
+    </div>
+    <h3 class="formulario" id="formulario">Reserva tu turno</h3>
+    <form action="https://formspree..." method="post">
+        <label for="nombre">Nombre del dueño</label>
+        <input type="text" id="dueño" name="nombre" required placeholder="Anto">
+
+        <label for="mascota">Nombre de tu mascota</label>
+        <input type="text" id="mascota" name="mascota" required placeholder="Kiara">
+
+        <label for="tamaño">Tamaño</label>
+        <select id="servicio" name="servicio" required>
+            <option value="">Seleccionar</option>
+            <option value="mini o toy">Mini o Toy (menos de 5Kg - hasta 25cm)</option>
+            <option value="pequeño">Pequeño (Entre 5 y 10Kg - hasta 35cm)</option>
+            <option value="mediano"> Mediano (Entre 10 y 25Kg - hasta 50cm)</option>
+            <option value="grande">Grande (Entre 25 y 45Kg - hasta 70cm)</option>
+            <option value="gigante">Gigante (Más de 45Kg - Más de 70cm)</option>
+        </select>
+
+        <label for="servicio">Servicio</label>
+        <select id="servicio" name="servicio" required>
+            <option value="">Seleccionar</option>
+            <option value="baño">Baño</option>
+            <option value="corte">Corte de pelo</option>
+            <option value="uñas">Corte de Uñas</option>
+            <option value="baño y corte">Baño y corte de pelo</option>
+            <option value="baño y corte de uñas">Baño y corte de uñas</option>
+            <option value="completo">Baño + Corte + Uñas</option>
+        </select>
+
+        <label for="hora">Horario de preferencia</label>
+        <select id="hora" name="hora">
+            <option value="">Seleccionar</option>
+            <option value="entre las 09:00 y 12:00hs">Entre las 09:00 y 14:00hs</option>
+            <option value="entre las 12:00 y 19:00hs">Entre las 14:00 y 19:00hs</option>
+        </select>
+
+        <label for="notas">Notas adicionales</label>
+        <textarea id="notas" name="notas" rows="3" placeholder="Ej: mi perro se asusta con el secador..."></textarea>
+
+        <button type="submit">Solicitar Turno</button>
+    </form>
+    <a href="https://api.whatsapp.com/send?phone=3517323513&text=Hola,%20quiero%20hacer%20una%20consulta&#128516"
+        class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <a href="https://www.instagram.com/depelos_pet/" class="instagram-float" target="_blank" aria-label="Instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    </a>
+    <footer>
+        &copy; 2025 De pelos peluquería Canina. Todos los derechos reservados.<br>
+        <a class="NLT" href="https://www.instagram.com/next_level_technology_oficial/" id="nlt">
+            Made by Next Levels Technology
+        </a>
+    </footer>
+
+</body>
+
+</html>
